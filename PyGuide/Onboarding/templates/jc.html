@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Community - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full">
+  <body class="h-full">
+  ```
+-->
+<main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div class="text-center flex flex-col justify-center align-middle items-center">
+        <img class="w-[200px]" src="{% static 'Blue with name.PNG' %}" alt="">
+      <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Come back later</h1>
+      <p class="mt-6 text-pretty text-lg font-medium text-gray-500 lg:w-[500px]  sm:text-xl/8">Sorry, registration to join the community will commence on 14th, November, 2024. Join our whatsapp waitlist group to stay updated.</p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="{% url 'Onboarding:Home' %}" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Go back home</a>
+        <a href="https://chat.whatsapp.com/CIFW1iX5sDYCfrjGrqTAMj" class="font-bold text-gray-900  text-[15px]">Join waitlist <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>

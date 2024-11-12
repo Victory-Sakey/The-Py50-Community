@@ -1,0 +1,833 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Py50 Community | Learn. Build. Impact.</title>
+    <link rel="stylesheet" href="{% static 'onboarding.css' %}?v=3">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light,
+.hero p,
+.advantages .advantages-body .text p,
+.card-body p
+  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.poppins-regular , 
+.about-2 p,
+.unleash-btn
+ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium,
+header a ,
+.contact-btn button ,
+.about-2 button,
+.unleash-paragraph,
+.advantages .advantages-body .text h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold , .about h1 ,
+.how .card-body h1  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic , 
+.unleash h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+</style>
+</head>
+
+<body class="bg-[#0D63A5]">
+    <header class="bg-[] conatiner mx-auto">
+        <nav class="flex font-sans justify-between items-center w-[92%]  ">
+            <div>
+                   <img class=" w-[150px] md:w-[120px] lg:w-[150px] ml-5" src="{% static 'White with name.PNG' %}" alt="">
+         
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] mt-10 md:w-auto  w-full flex items-center px-5 sm:px-3  md:px-5 text-white font-extrabold bg-[#025594] max-md:shadow-lg md:bg-transparent ">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:Home' %}">Home</a>
+                      
+                    </li>
+                    
+                    <li>
+                        <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:about' %}">About Us</a>
+                        
+                    </li>
+                
+                    <li>
+                        <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:join' %}">Join Community</a>
+                       
+                    </li>
+                 
+                   
+                  
+                </ul>
+            </div>
+            <div class="contact-btn flex items-center gap-6">
+                <a href="https://wa.link/zqivo8">
+                  <button  style="box-shadow: -1px 5px white; border-bottom: 2px solid #eed602;" class="bg-[#FFEB3B] text-[#00509E] px-2 py-2 lg:px-10 lg:py-3 rounded-[50px] text-[13px] md:text-[15px] font-bold mt-3 hover:bg-[#eed602]">Contact Us</button>
+                </a>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-[white] md:hidden"></ion-icon>
+            </div>
+    </header>
+    <!-- <hr> -->
+    <main>
+      <section id="hero">
+        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle mt-[20px] w-[92%]  mx-auto" data-aos="fade-up"  data-aos-once="true">
+        <div class="hero-text md:ml-[50px] w-full md:text-left text-center">
+          <!-- <h1 class="bg-indigo-600  rounded mt-[50px] md:mt-[100px] w-[200px] text-white text-center hidden md:block" >Become a Tech Guru!</h1> -->
+          <h2 class=" font-sans font-bold text-4xl mt-[20px] md:mt-[0px] md:text-4xl lg:text-7xl text-white capitalize w-full md:w-[100%] lg:w-[100%] pt-4 pb-4  " >We are the  <span class="text-[#FFD717]">Py50 </span> Community.</h2>
+          <p class="text-[#CCCCCC] md:text-[15px] lg:text-[19px] mt-3 md:w-[90%] lg:w-[90%] " >We dream of a world where everyone is empowered to achieve greatness, using their brilliant ideas and creativity to make a positive impact on society. With the aid of technology, we believe that every individual has the potential to change the world for the better.</p>
+          <div class="btn flex md:justify-start justify-center">
+            <!-- <button class="started bg-indigo-700 text-white px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-white hover:text-indigo-700 mt-5 mr-4 ">Get Started</button>
+            <button class="join bg-white text-indigo-700 px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-indigo-700 hover:text-white mt-5 ">Join Community</button> -->
+          </div>
+        </div>
+        <div class="hero-img md:w-[1000px] lg:w-[90%] mt-4">
+          <img src="{% static '20240908_204606.png' %}" alt="">
+        </div>
+        </div>
+        
+        <img data-aos="fade-up"  data-aos-once="true" src="{% static 'white-cloud.svg' %}" class="w-full mt-[50px]" alt="">
+        
+      </section>
+
+     <section id="scroller" class="bg-white lg:hidden">
+      <div class="scroller-title">
+        <h1 class="text-xl py-2 md:text-2xl uppercase  text-center lg:hidden text-[#001F3F] font-bold" data-aos="fade-up"  data-aos-once="true">50 Technologies, <span class="">One Community</span></h1>
+      </div>
+       <div class="anime w-full">
+        <img class="w-[100%] lg:hidden" src="{% static '4bcf25592e00da981f05e88818a236d8.gif' %}" alt="">
+       </div>
+
+       <section id="About">
+        <div class="about mx-auto container">
+          <h1 class="md:text-xl text-[15px] hidden lg:block lg:text-3xl uppercase  text-center text-[#001F3F] font-bold" data-aos="fade-up"  data-aos-once="true">50 Technologies, <span class="       "> One Community</span></h1>
+          <div class="flex md:flex-row flex-col-reverse md:justify-center lg:justify-center  p-5 lg:p-2 xl:p-20">
+            <div class="about-1 p-5" data-aos="fade-up"  data-aos-once="true">
+              <!-- <h1 class="text-red-500 text-xl  pb-3 font-extrabold ">Welcome!</h1> -->
+          <img class="w-[400px] md:w-[2000px] lg:w-[2000px]" src="{% static 'hursh7.gif' %}" alt="">
+          </div>
+          <div class="about-2  p-4 pb-4" data-aos="fade-up"  data-aos-once="true">
+              <p class="text-gray-600 font-sans  text-[18px] lg:text-[17px] md:text-[15px] w-full md:w-[100%] lg:w-[90%] text-left">
+                The Py50 (Pioneer Yourself 50) Community is a vibrant tech community where technology enthusiasts come together to learn, share knowledge, and collaborate on significant projects across 50 different technologies.
+<br>
+                We are committed to fostering growth within our community, driven by a philosophy of mutual impact—where members both learn from and contribute to the community. As a member of Py50, you'll have the unique opportunity to be mentored by experts in any of the 50 technologies that interest you. Additionally, you'll have the chance to mentor others, sharing your expertise and helping to shape the next generation of tech innovators.
+              </p>
+              <a href=""><button class="bg-blue-500 p-4 mt-8 w-[200px] text-white text-2xs font-sans  font-bold rounded-[50px] cursor-pointer hover:bg-[#00509E]">Know More</button></a>
+          </div>
+          </div>
+            
+        </div>
+
+    </section>
+
+
+    <section id="unleash" class="lg:px-[80px] px-[30px] mt-12 pb-[50px]">
+      <div class="unleash rounded-md container flex md:flex-row flex-col  mx-auto bg-[#0D63A5] md:p-[30px] lg:p-[50px] p-[30px] h-[100%] " data-aos="fade-up"  data-aos-once="true">
+          <div class="unleash-title py-[5px]">
+            <h1 class="text-white text-left text-2xl md:text-3xl lg:text-4xl "><span class="text-[#FFD717]">Unleash</span> your Potential!</h1>
+            <p class="unleash-paragraph text-gray-300 pt-3 w-[100%] md:w-[80%] text-[15px]">
+              The Py50 Community is for everyone, whether you're just starting in tech or already experienced. Py50 helps you grow as a techie by teaching, learning, and building projects together. We strongly believe that everyone has the potential to achieve great things, and as a community, we help you recognize and realize that potential.
+            </p>
+              <a href="{% url 'Onboarding:about' %}"><button class="unleash-btn bg-white p-3 mt-5 hover:bg-[#083358] hover:text-white transition   rounded-[50px] cursor-pointer text-[15px]">Become a Member &rightarrow;</button></a>
+
+          </div>
+          <div class="unleash-img">
+            <img class="rounded-md w-full mt-3 md:mt-7 lg:mt-0" src="{% static '49712.jpg' %}" alt="">        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="mt-[50px] md:mt-[80px] px-[30px] xl:px-[40px]">
+      <div class="advantages mx-auto container flex md:flex-row flex-col-reverse justify-center" >
+        <div class="advantages-img p-[40px] md:p-0">
+          <img class="rounded-md w-[100%] md:w-[400px] lg:w-[400px]" src="{% static '2151447173.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+        </div>
+        <div class="advantages-info w-full md:w-[50%] md:pl-5 lg:pl-9">
+          <div class="advantages-title">
+            <h1 class="font-sans text-3xl md:text-left text-center md:text-2xl  lg:text-5xl font-bold text-[#001F3F]" data-aos="fade-up"  data-aos-once="true">What unique advantage does the Py50 community give you? </h1>
+          </div>
+          <div class="advantages-body mt-9 md:mt-5 lg:mt-9">
+            <div class="item flex justify-between mt-3" data-aos="fade-up"  data-aos-once="true">
+              <div class="check pr-2 lg:pr-4">
+              <span class="bg-[#0D63A5] text-white rounded-[100%] text-[10px]  lg:text-[15px] p-2">&check;</span>
+              </div>
+              <div class="text">
+                <h1 class="text-[#083358] ttext-[18px] md:text-[15px] lg:text-xl">Practical project-based learning:</h1>
+              <p class="lg:text-[15px] text-[15px] md:text-[12px]    text-gray-700">Py50 offers hands-on experience in real-world projects, allowing members to apply their skills in a practical setting. At the end of the growth process, members receive project tasks to work on collaborate with peers, enhancing their learning experience and expanding their networks.</p>
+              </div>
+            </div>
+            <div class="item flex justify-between mt-3" data-aos="fade-up"  data-aos-once="true">
+              <div class="check pr-2 lg:pr-4">
+                <span class="bg-[#0D63A5] text-white rounded-[100%] text-[10px]  lg:text-[15px] p-2">&check;</span>
+              </div>
+              <div class="text">
+                <h1 class="text-[#083358] text-[18px] md:text-[15px] lg:text-xl">Share your knowledge with others:</h1>
+              <p class="lg:text-[15px] text-[15px] md:text-[12px]    text-gray-700">Py50 offers you the opportunity to teach beginners in the community what you know. In that way, you won't just have all the knowledge to yourself but also impact others with  it making you more proficient and efficient in your tech skill.</p>
+              </div>
+            </div>
+            <div class="item flex justify-between mt-3" data-aos="fade-up"  data-aos-once="true">
+              <div class="check lg:pr-4 pr-2">
+              <span class="bg-[#0D63A5] text-white rounded-[100%] text-[10px]  lg:text-[15px] p-2">&check;</span>
+              </div>
+              <div class="text">
+                <h1 class="text-[#083358] text-[18px] md:text-[15px] lg:text-xl">Mentorship & Community Support:</h1>
+              <p class="lg:text-[15px] text-[15px] md:text-[12px]    text-gray-700">
+                As a Py50 member, you'll be given all the motivation and support you need to sky rocket your tech journey. 
+                </p>
+              </div>
+            </div>
+           <div class="flex  items-center md:items-start md:justify-start justify-center" data-aos="fade-up"  data-aos-once="true"> 
+            <a href="{% url 'Onboarding:join' %}">
+              <button class="unleash-btn bg-[#0D63A5] p-3 mt-7   md:ml-7 lg:ml-10 hover:bg-[#083358] hover:text-white transition text-white   rounded-[50px] cursor-pointer text-[15px]">Join Community</button>
+            </a>
+           </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="md:mt-[80px] mt-[50px] px-[30px]   xl:px-[40px]  "> 
+      <div class="how container  mx-auto">
+        <div class="how-title">
+          <h1 class="lg:text-[50px] md:text-[40px] text-[30px] text-[#001F3F] font-sans font-bold text-center" data-aos="fade-up"  data-aos-once="true">How it Works</h1>
+        </div>
+        <div class="card-body align-middle justify-center   mt-[20px] md:mt-[50px] lg:mt-[70px] flex-wrap flex ">
+          <div  class="card-item mt-[10px] m-2  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#0D63A5]" data-aos="fade-up"  data-aos-once="true">
+            <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]">
+              <img src="{% static '32e609f0-pin.webp' %}" alt="">
+            </div>
+            <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[10px] ">
+             <h1 class="lg:text-3xl md:text-2xl text-2xl">Join the Community</h1>
+              <p class="mt-3 text-[15px] lg:text-[18px]">Get started by joining the community.  <b><a class="font-bold border-dashed" href="{% url 'Onboarding:join' %}">Join now</a></b></p>
+            </div>
+            
+        </div>
+        <div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#fdbb06]" data-aos="fade-up"  data-aos-once="true">
+          <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]">
+            <img src="{% static '32e609f0-pin.webp' %}" alt="">
+          </div>
+          <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[12px] ">
+           <h1 class="lg:text-3xl md:text-2xl text-2xl">Choose a Role</h1>
+            <p class="mt-3 text-[15px] lg:text-[18px]">Choose if you want to become a Scholar , Mentor or Tutor. <a class="font-bold" href="{% url 'Onboarding:about' %}">Know more</a></p>
+          </div>
+          
+      </div>
+      <div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#0D63A5]  md:bg-[#fdbb06]" data-aos="fade-up"  data-aos-once="true">
+        <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]">
+          <img src="{% static '32e609f0-pin.webp' %}" alt="">
+        </div>
+        <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[12px] ">
+         <h1 class="lg:text-3xl md:text-2xl text-2xl">Learn. Build. Impact.</h1>
+          <p class="mt-3 text-[15px] lg:text-[18px]">Once you join the community, you'll either be taught your desired tech skill or teach others depending on the role you choose. This will be done for 10 weeks.</p>
+        </div>
+        
+    </div>
+    <div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#fdbb06] md:bg-[#0D63A5]" data-aos="fade-up"  data-aos-once="true">
+      <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]">
+        <img src="{% static '32e609f0-pin.webp' %}" alt="">
+      </div>
+      <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[10px] ">
+       <h1 class="lg:text-3xl md:text-2xl text-2xl">Join a Team</h1>
+        <p class="mt-3 text-[15px] lg:text-[18px]">You'll be added to a team to improve your collobarative skills.</p>
+      </div>
+      
+  </div>
+  <div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#0D63A5]" data-aos="fade-up"  data-aos-once="true">
+    <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]">
+      <img src="{% static '32e609f0-pin.webp' %}" alt="">
+    </div>
+    <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[12px] ">
+     <h1 class="lg:text-3xl md:text-2xl text-2xl">Work on a Project</h1>
+      <p class="mt-3 text-[15px] lg:text-[18px]">After the growth process, you and your team will work on a big project, which we term "The Dream Project".</p>
+    </div>
+    
+</div>
+<div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#fdbb06]">
+  <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]" data-aos="fade-up"  data-aos-once="true">
+    <img src="{% static '32e609f0-pin.webp' %}" alt="">
+  </div>
+  <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[10px] " data-aos="fade-up"  data-aos-once="true">
+   <h1 class="lg:text-3xl md:text-2xl text-2xl">Automatic Employment</h1>
+    <p class="mt-3 text-[15px] lg:text-[18px]">After the project is launched suceessfully, you'll be employed to our company, Eden.</p>
+  </div>
+  
+</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section id="trinity" class="bg-white h-screen">
+      <div class="trinity container mx-auto">
+      <div class="title">
+        <h1 class="text-5xl tracking-wide text-center font-sans font-bold text-gray-900">No Limits, No Boundaries</h1>
+      </div>
+      
+      </div>
+    </section> -->
+
+    <section id="faqs" class="lg:px-[80px] xl:px-[90px] px-[30px] mt-[50px] md:mt-[80px] xl:mt-[90px] pb-[50px]">
+      <div class="faqs container flex md:flex-row justify-center  flex-col">
+            <div class="faq-intro md:w-[50%] sm:w-[70%]" data-aos="fade-up"  data-aos-once="true">
+              <h1 class="xl:text-5xl sm:text-4xl text-4xl  poppins-bold  text-[#001F3F]">Frequently asked Questions</h1>
+              <p class="text-gray-600 poppins-regular py-3 md:[530px] xl:w-[450px] text-[20px]">Still have questions that aren't covered? Contact us today and get the answers you need.</p>
+              <a href="https://wa.link/zqivo8">
+                <button class="bg-[#0D63A5] text-[15px] rounded-[50px] text-white p-3 mt-3 poppins-medium ">Contact Us &rightarrow;</button>
+              </a>
+              
+              <!-- <img class="mt-5 w-[500px] rounded-[20px]" src="{% static '12040.jpg' %}" alt=""> -->
+            </div>
+            <div class="faq-items mt-5 md:mt-[0px]  md:w-[50%] sm:w-[100%] mx-auto container ">
+              <div data-aos="fade-up"  data-aos-once="true"  class="faq-item  mx-auto container bg-blue-100 p-4 mb-3 rounded-[30px] w-full  cursor-pointer">
+                <div class="faq-text py-3">
+                  <h1  class="text-[20px] text flex items-center align-middle poppins-medium justify-between text-[#001F3F] font-bold pb-1">
+                    What is Py50?
+                    <div class="faq-symbol text-2xl font-bold text-[#001F3F] cursor-pointer">
+                      &plus;
+                    </div>
+                  </h1>
+                  <p class="text-gray-500 poppins-regular   text-[15px]">
+                    Py50 is a dynamic technology community dedicated to fostering collaboration and knowledge-sharing around 50 diverse technologies. It serves as a hub for tech enthusiasts and professionals, providing a platform where individuals with varying levels of expertise—whether they are beginners or specialists—can come together to explore, learn, and contribute to the development of innovative projects. By focusing on a wide range of technologies, Py50 encourages members to expand their skills, share insights, and collaborate on building impactful solutions. The community is committed to nurturing growth, fostering meaningful connections, and promoting a culture of continuous learning and collaboration within the tech space.
+                  </p>
+                  
+                </div>
+                
+              </div>
+              <div data-aos="fade-up"  data-aos-once="true"  class="faq-item  mx-auto container bg-blue-100 p-4 rounded-[30px] cursor-pointer w-full mb-3">
+                <div class="faq-text py-3">
+                  <h1  class="text-[20px] text flex items-center align-middle poppins-medium justify-between text-[#001F3F] font-bold pb-1">
+                    I don't have any tech skill. Is it still possible to join the community?
+                    <div class="faq-symbol text-2xl font-bold text-[#001F3F] cursor-pointer">
+                      &plus;
+                    </div>
+                  </h1>
+                  <p class="text-gray-500 poppins-regular  text-[15px]">
+                    Yes, Py50 is for everyone, regardless of their level of experience, as long as they have an interest in technology. We offer specific membership roles, including one tailored for beginners in tech, ensuring that everyone has a place to learn and grow within the community.
+                  </p>
+                  
+                </div>
+                
+              </div>
+              <div data-aos="fade-up"  data-aos-once="true"  class="faq-item  mx-auto container bg-blue-100 p-4 rounded-[30px] w-full mb-3 cursor-pointer">
+                <div class="faq-text py-3">
+                  <h1  class="text-[20px] text flex items-center align-middle justify-between text-[#001F3F] font-bold pb-1 poppins-medium">
+                    What are the Py50 membership roles?
+                    <div class="faq-symbol text-2xl font-bold text-[#001F3F] cursor-pointer">
+                      &plus;
+                    </div>
+                  </h1>
+                  <p class="text-gray-500 poppins-regular   text-[15px]">
+                    The Py50 membership roles are roles given to every member of the Py50 community. There are 3 membership roles, which are: Tutor , Mentor & Scholar. <b><a href="{% url 'Onboarding:about' %}" class="text-blue-500">Read More.</a></b>
+                    <!-- <br>
+                    &bullet; <b class="text-[#083358]">Tutor</b>: The role of a Tutor in the Py50 community is designated for members who possess substantial knowledge and experience in any of the 50 technologies the community focuses on. As a Tutor, your primary responsibility is to organize and conduct classes, guiding beginners and helping them enhance their skills. Tutors play a key role in fostering learning by sharing their expertise and providing structured mentorship to less experienced members. If you have a strong foundation in one or more of these technologies, you can join the Py50 community and become a Tutor, where you will have the opportunity to contribute by teaching and shaping the next generation of tech enthusiasts.<b><a class="text-blue-500" href=""> Join here.</a></b>
+                    <br>
+                    &bullet; <b class="text-[#083358]">Mentor</b>: Similar to the Tutor role, the Mentor in the Py50 community is also someone with in-depth knowledge and expertise in any of the 50 technologies the community covers. However, unlike Tutors, who organize and conduct group classes, Mentors focus on providing one-on-one guidance to individual beginners. As a Mentor, your role is to support and coach newcomers, offering personalized advice and mentorship to help them grow in their chosen technology. When you join the community as a Mentor, you will be assigned a beginner to guide, fostering their development through tailored support and mentorship. <b><a class="text-blue-500" href="">Join here</a></b>.
+                    <br>
+                     <b class="text-[#083358]">&bullet; Scholar</b>: Lastly, the role of a Scholar in the Py50 community is designed for individuals who are beginners or just starting their journey in the tech field. As a Scholar, you have the freedom to select any of the 50 technologies that interest you, and you will receive structured learning from the community's Tutors, who will provide lessons and training in your chosen skill. Additionally, you will be paired with a Mentor who will offer personalized guidance and support as you progress. This dual support system ensures that Scholars receive both formal education and individual mentorship, enabling them to grow and develop their skills effectively within the community. <b><a class="text-blue-500" href="">Join here</a></b>. -->
+                  </p>
+                  
+                </div>
+              </div>
+              <div data-aos="fade-up"  data-aos-once="true"  class="faq-item cursor-pointer  mx-auto container bg-blue-100 p-4 mb-3 rounded-[30px] w-full">
+                <div class="faq-text py-3">
+                  <h1  class="text-[20px] text flex items-center align-middle poppins-regular justify-between text-[#001F3F] font-bold pb-1">
+                    Is being a Scholar in the community free?
+                    <div class="faq-symbol text-2xl font-bold text-[#001F3F] cursor-pointer">
+                      &plus;
+                    </div>
+                  </h1>
+                  <p class="text-gray-500 poppins-medium  text-[15px]">
+                    While we would love for the program to be free, there is a nominal fee of ₦12,000 for the session. This fee is essential to ensure the sustainability of the community and to compensate the Tutors who dedicate their time to teaching and guiding you. The program spans a duration of 10 weeks, during which you will receive comprehensive training and mentorship in your chosen technology. Upon completion, you will have the opportunity to be promoted to a Mentor or Tutor, where you can pass on your knowledge and guide others who join the community after you. This structure not only fosters continuous learning but also helps to maintain a vibrant and thriving community.
+                  </p>
+                  
+                </div>
+                
+              </div>
+              
+              <div data-aos="fade-up"  data-aos-once="true"  class="faq-item  mx-auto container bg-blue-100 p-4 rounded-[30px] "> 
+                <div class="faq-text py-3 cursor-pointer">
+                  <h1  class="text-[20px] text flex items-center align-middle justify-between poppins-medium text-[#001F3F] font-bold pb-1">
+                    How is Eden related to Py50?
+                    <div class="faq-symbol text-2xl font-bold text-[#001F3F] cursor-pointer">
+                      &plus;
+                    </div>
+                  </h1>
+                  <p class="text-gray-500 poppins-regular   text-[15px]">
+                    Eden, a tech company founded by Py50, offers an exciting opportunity for members. When you join Py50, you embark on a "Learn. Build. Impact" journey, where you'll actively participate in your chosen role—whether as a Tutor, Mentor, or Scholar—for six months. Following this phase, you'll work on a project that allows you to apply your skills. If your project is successful, you may even be offered a position at Eden. Isn't that incredible? This pathway not only helps you grow as a professional but also opens the door to real-world opportunities in the tech industry.
+                  </p>
+                  
+                </div>
+                
+              </div>
+            
+              
+              
+            </div>
+            
+              
+            </div>
+      </div>
+    </section>
+
+    
+</main>
+
+<style>
+  .faq-text p {
+    max-height: 0; /* Start with max-height 0 to hide the element */
+    overflow: hidden; /* Hide overflow to prevent showing the text */
+    transition: max-height 0.3s ease-in-out; /* Transition for smooth effect */
+  }
+
+  .faq-text p.show {
+    max-height: 500px; /* Set a large enough value to accommodate content */
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item'); // Select all faq-item containers
+
+    faqItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const answer = this.querySelector('p'); // Get the <p> inside the clicked faq-item
+        const isExpanded = answer.classList.contains('show');
+
+        if (isExpanded) {
+          answer.classList.remove('show'); // Remove show class to collapse
+          this.querySelector('.faq-symbol').innerHTML = '&plus;'; // Change symbol to plus
+        } else {
+          answer.classList.add('show'); // Add show class to expand
+          this.querySelector('.faq-symbol').innerHTML = '&minus;'; // Change symbol to minus
+        }
+      });
+    });
+  });
+</script>
+
+<div class="relative w-full overflow-hidden bg-white">
+  <div class="flex transition-transform duration-500 ease-in-out transform" id="carousel-slides">
+    <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-24">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG-20240920-WA0047.jpg' %}" class="xl:w-[350px] max-md:hidden lg:w-[280px] md:w-[230px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG-20240920-WA0047 (1).jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[15px] md:text-[15px] lg:text-[18px]">Joining Py50 has been transformative for me. Initially, my programming skills were not as strong, but since becoming a member, I can confidently say I’ve grown to an above-average level. I’ve learned to think programmatically and apply my technical skills to solve real-world problems.</p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Idaraobong Etim</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+         <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG-20240410-WA0000~2.jpg' %}" class="xl:w-[430px] max-md:hidden lg:w-[350px] md:w-[290px] sm:w-[250px]   shadow-lg ml-10  md:ml-5 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG-20240410-WA0000~2.jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[200px] sm:w-[410px] w-[250px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-3 lg:p-12 xl:p-28 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-2 xl:pb-10 text-[10px] md:text-[10px] lg:text-[14px]">Py50 has been a game-changer for me! This life-transformative program has not only enhanced my programming skills but also propelled my growth exponentially. Coach Victory Sakey's expert mentorship, guidance, and supportive community have been instrumental in my success. 
+                      I highly recommend Py50 to anyone seeking to elevate their programming skills and transform their career. Coach Victory Sakey's passion for empowering programmers is contagious, and his expertise is unmatched.
+                      Thank you, Py50 and Coach Victory, for an unforgettable journey.
+                      </p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Favour Jeremiah</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+         <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="xl:w-[400px] max-md:hidden lg:w-[300px] md:w-[250px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG-20240930-WA0004(1).jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[10px] md:text-[12px] lg:text-[15px]">The Py50 Programme was a life changer for me. Despite the difficulties I faced with Programming Languages like Python, the Instructor made them so easy to understand that everyone was following closely. The theoretical aspect of the class was also backed up with multiple practical exercises which helped me view Python from a different perspective.
+                      I really recommend this Programme for anyone and everyone whose passion for the Tech Industry is lit. And even those who are looking forward to adding value to themselves, and the world by providing solutions to the World in whatever way you can.</p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Essienuko Ekereobong</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+         <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'covennat-removebg-preview.png' %}" class="xl:w-[450px] max-md:hidden lg:w-[360px] md:w-[310px] sm:w-[250px]   shadow-lg ml-10  md:ml-5 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'covennat-removebg-preview.png' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-5 xl:p-20 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-2 xl:pb-10 text-[10px] md:text-[11px] lg:text-[15px]">Joining The Py50 community has been a transformative experience for my Python learning journey. The structured curriculum, supportive mentors, and collaborative environment have helped me grasp complex concepts with ease. What sets Py50 apart is the emphasis on practical, hands-on projects, which have allowed me to apply what I've learned in real-world scenarios. The community's dedication to fostering a learning culture has significantly boosted my confidence and proficiency in Python. I highly recommend The Py50 community to anyone looking to accelerate their Python skills and be part of an encouraging network of learners.</p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Covenant Monday</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+         <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG_20240330_141914~2.jpg' %}" class="xl:w-[300px] max-md:hidden lg:w-[240px] md:w-[190px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG_20240330_141914_031755~3.jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-3 lg:p-12 xl:p-20 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[10px] md:text-[12px] lg:text-[15px]">For the past couple of months, I've been able to learn a handful on information on Python. I can code on my own and solve numerous complicated questions. The lessons are comprehensive and our coach using diverse professional method of teaching to ensure proper understanding. PY50 has changed my perspective on technology, I now believe in my ability to learn and grow as a 'techie' they have molded me to become. This is the most unique and recommendable technology community in Uyo. I'd love every one who is looking for his path in tech... Come to this community, among the 50 technologies, there's one and more for you. 
+                    </p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Precious Okon</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+         
+      <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-28">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[280px] lg:h-[330px] xl:h-[418px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG-20240921-WA0009.jpg' %}" class="xl:w-[300px] max-md:hidden lg:w-[230px] md:w-[200px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG-20240921-WA0009 (1).jpg' %}" class="xl:w-[350px] md:hidden lg:w-[280px] md:w-[230px] sm:w-[410px] w-[200px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-2 lg:p-8 xl:p-16 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-3 text-[10px] md:text-[10px] lg:text-[13px]">Being part of the Py50 Community has been an incredible transformative journey that has significantly accelerated my development as a UI/UX designer the opportunity to work on real-world projects, often tackling complex design challenges, has not only sharpened my technical skils but also deepened my understanding of the industry. Collaborating closely with a talented team of designers and developers, we have worked together to create impactful soutions, al whie fostering a strong sense of teamwork and collaboration. Our well-structured and thoughtful meetings have been a vital aspect of this experience, offering a platform to share ideas, refine concepts and receive valuable feedback.</p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">David Etuk</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Mentor</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+      <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-28">
+          <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[330px] lg:h-[360px] xl:h-[450px]">
+              <!-- Carousel Images -->
+              <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                  <img src="{% static 'IMG-20240927-WA0013.jpg' %}" class="xl:w-[280px] max-md:hidden lg:w-[220px] md:w-[200px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <img src="{% static 'IMG-20240927-WA0013(1).jpg' %}" class="xl:w-[350px] md:hidden lg:w-[280px] md:w-[230px] sm:w-[410px] w-[200px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                  <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
+                    <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[15px] md:text-[15px] lg:text-[18px]">The course was great! Despite not having prior experience with the programming language called python, the tutor has simpified tought topics to my understanding. The work exercises has real been of help to me to even understand the course better and find it interesting. I highly recommend joining the Py50 Community to anyone who wants to expore in their understanding of programming.</p>
+                    <h1 class="poppins-semibold md:text-[10px] lg:text-[15px] text-white">Dominion Isoh</h1>
+                    <h2 class="poppins-medium text-[10px] text-[#FFD717]">Scholar</h2>
+                  </div>
+                </div>
+                
+                  <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                  <img src="{% static 'IMG-20240920-WA0047.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                 
+              </div>
+            
+            
+            
+          </div>
+          
+           
+        
+         </div>
+      </div>
+       <!-- Navigation Buttons -->
+  <button class="absolute top-1/2 left-2 transform -translate-y-1/2 font-bold bg-[#0D63A5] ml-10 bg-opacity-100 text-white p-2 rounded-full  " id="prev">
+      ❮
+  </button>
+  <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#0D63A5] bg-opacity-100 text-white p-2 font-bold mr-10 rounded-full " id="next">
+      ❯
+  </button>
+  </div>
+
+ 
+</div>
+
+ 
+<footer class="bg-[#0A2647] text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="{% static 'White with name.PNG' %}" alt="">
+      </a>
+      <p class="mt-2 text-sm text-[#FFD717] font-bold">LEARN. BUILD. IMPACT.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+          </li>
+                  </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">FOR SPONSORS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://wa.link/ivzan9" class="text-gray-400 hover:text-yellow-500">Become a Sponsor</a>
+          </li>
+        
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">LINKS</h2>
+        <nav class="list-none mb-10">
+        <li>
+                  <a href="{% url 'Onboarding:Home' %}" class="text-gray-400 hover:text-yellow-500">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'Onboarding:about' %}" class="text-gray-400 hover:text-yellow-500">About Us</a>
+                </li>  
+                <li>
+                  <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Join Community</a>
+                </li>
+
+          
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">SUPPORT</h2>
+        <nav class="list-none mb-10">
+          
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]" >Help Center</a>
+          </li>
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]">support@py50c.xyz</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Py50 Community Limited. All rights reserved. —
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The Py50 Community</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+       
+        <a href="https://www.instagram.com/py50_community?igsh=YzljYTk1ODg3Zg==" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        
+      </span>
+    </div>
+  </div>
+</footer>
+ 
+      <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+
+
+<script src="{% static 'onboarding.js' %}?v=4"></script>      
+</body>
+</html>

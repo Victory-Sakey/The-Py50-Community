@@ -1,0 +1,522 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Py50 Community</title>
+    <link rel="stylesheet" href="{% static 'onboarding.css' %}?v=3">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light,
+.hero p,
+.advantages .advantages-body .text p,
+.card-body p
+  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.poppins-regular , 
+.about-2 p,
+.unleash-btn
+ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium,
+header a ,
+.contact-btn button ,
+.about-2 button,
+.unleash-paragraph,
+.advantages .advantages-body .text h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold , .about h1 ,
+.how .card-body h1  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic , 
+.unleash h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+</style>
+</head>
+<body>
+  <header class="bg-[#0D63A5] conatiner mx-auto">
+    <nav class="flex font-sans justify-between items-center w-[92%]  ">
+        <div>
+               <img class=" w-[150px] md:w-[120px] lg:w-[150px] ml-5" src="{% static 'White with name.PNG' %}" alt="">
+     
+        </div>
+        <div
+            class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] mt-10 md:w-auto  w-full flex items-center px-5 sm:px-3  md:px-5 text-white font-extrabold bg-[#025594] max-md:shadow-lg md:bg-transparent ">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:Home' %}">Home</a>
+                  
+                </li>
+                
+                <li>
+                    <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:about' %}">About Us</a>
+                    
+                </li>
+            
+                <li>
+                    <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:join' %}">Join Community</a>
+                   
+                </li>
+             
+               
+              
+            </ul>
+        </div>
+        <div class="contact-btn flex items-center gap-6">
+            <a href="https://wa.link/zqivo8">
+              <button  style="box-shadow: -1px 5px white; border-bottom: 2px solid #eed602;" class="bg-[#FFEB3B] text-[#00509E] px-2 py-2 lg:px-10 lg:py-3 rounded-[50px] text-[13px] md:text-[15px] font-bold mt-3 hover:bg-[#eed602]">Contact Us</button>
+            </a>
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-[white] md:hidden"></ion-icon>
+        </div>
+</header>
+    <!-- <hr> -->
+    <main class="bg-[#0D63A5]">
+      <section id="hero">
+        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle w-[92%] px-10 pt-10  mx-auto" data-aos="fade-up"  data-aos-once="true">
+        <div class="hero-text w-full md:text-left text-center">
+          <!-- <h1 class="bg-indigo-600  rounded mt-[50px] md:mt-[100px] w-[200px] text-white text-center hidden md:block" >Become a Tech Guru!</h1> -->
+          <h2 class=" font-sans font-bold text-4xl mt-[20px] md:mt-[0px] md:text-4xl lg:text-6xl text-white  w-full  md:w-[100%] lg:w-[100%] pt-4 pb-4  " >We’re building the Future of  <span class="text-[#FFD717]">Technology</span></h2>
+          <p class="text-[#CCCCCC] md:text-[15px] lg:text-[19px] mt-3 md:w-[90%] lg:w-[90%] " >Transforming the world is a formidable challenge, yet as a community, we are committed to the principle that meaningful achievements require dedication. This conviction is embedded in every member of our community, driving us steadily toward our vision of creating a positive global impact through innovation and technology. </p>
+          <div class="btn flex md:justify-start justify-center">
+            <!-- <button class="started bg-indigo-700 text-white px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-white hover:text-indigo-700 mt-5 mr-4 ">Get Started</button>
+            <button class="join bg-white text-indigo-700 px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-indigo-700 hover:text-white mt-5 ">Join Community</button> -->
+          </div>
+        </div>
+        <div class="hero-img md:w-[1000px] lg:w-[80%] mt-4">
+          <img class="rounded-[20px]" src="{% static '20167.jpg' %}" alt="">
+        </div>
+        </div>
+        
+        <img data-aos="fade-up"  data-aos-once="true" src="{% static 'white-cloud.svg' %}" class="w-full mt-[50px]" alt="">
+        
+    </section>
+
+    <section id="mission" class="bg-white pb-10">
+        <div class="mission container mx-auto align-middle items-center px-10">
+            <h1 class="lg:text-5xl md:text-4xl text-3xl text-[#001F3F] poppins-medium" data-aos="fade-up"  data-aos-once="true">Our Mission  & Vision</h1>
+            <div class="mission-info pt-5 flex md:flex-row flex-col pb-10 justify-between">
+                <div class="statement">
+                    <p class="xl:w-[650px] lg:w-[500px] md:w-[450px] text-xl  lg:text-xl text-gray-600 poppins-light" data-aos="fade-up"  data-aos-once="true">
+                        Our mission is to empower individuals through comprehensive technology training and collaborative project development, driving impactful change on a global scale.
+                        <br> <br>
+                        Our vision is to create a vast ecosystem of skilled tech professionals, each proficient in one of fifty core technologies, united within our company, Eden. We aspire to establish physical branches of our community worldwide, fostering innovation that elevates lives and advances global standards.
+                    </p>
+                </div>
+                <div class="records lg:ml-32 lg:w-[50%] md:[40%] max-md:pt-5">
+                    <div class="record">
+                        <h1 class="lg:text-5xl text-4xl poppins-bold text-[#001F3F]" data-aos="fade-up"  data-aos-once="true">50</h1>
+                        <h2 class="poppins-light text-[18px] text-gray-500" data-aos="fade-up"  data-aos-once="true">Technologies</h2>
+                    </div>
+                    <div class="record pt-5">
+                        <h1 class="lg:text-5xl text-4xl poppins-bold text-[#001F3F]" data-aos="fade-up"  data-aos-once="true">5 million</h1>
+                        <h2 class="poppins-light text-[18px] text-gray-500" data-aos="fade-up"  data-aos-once="true">New Members Anually</h2>
+                    </div>
+                    <div class="record pt-5">
+                        <h1 class="lg:text-5xl text-4xl poppins-bold text-[#001F3F]" data-aos="fade-up"  data-aos-once="true">Unlimited</h1>
+                        <h2 class="poppins-light text-[18px] text-gray-500" data-aos="fade-up"  data-aos-once="true">Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <img class="md:w-[3000px] shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142330.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+        </div>
+    </section>
+
+
+
+    <section id="organizers" class="bg-white py-24">
+        <div class="organizers container mx-auto px-8 md:px-5 lg:px-10">
+          <h1 class="text-center md:text-5xl text-4xl poppins-bold text-[#001F3F] pb-16" data-aos="fade-up"  data-aos-once="true">Meet Our Founders</h1>
+            <div class="founder flex md:flex-row flex-col justify-center">
+                <div class="founder-img  md:w-[60%]  lg:w-[40%]">
+                    <img class="rounded-[20px] shadow-lg" src="{% static 'IMG_0191.JPG.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+                </div>
+                <div class="founder-info poppins-regular text-gray-700 text-[15px] md:text-[12px] lg:[text-15px] xl:text-[17px] md:px-5 lg:px-10 lg:[70%]  xl:w-[60%] md:w-[100%] max-md:pt-[15px]" data-aos="fade-up"  data-aos-once="true">
+
+                  <p>Hello, I'm Victory Sakey, a passionate software developer. Establishing the Py50 Community has been a challenging journey, but overcoming those obstacles has reinforced my belief that every great accomplishment begins with perseverance. As also a tutor within our community, I've gained invaluable experience and a deeper understanding that learning is a continuous process—and that we grow by helping others grow. Py50 is a community with ambitious goals, and we’re committed to pursuing this journey together until we achieve the future we envision.
+                  </p>
+                 
+                  <h1 class="poppins-bold text-[#001F3F] text-[20px] pt-3">Victory Sakey</h1>
+                  <h2 class="text-[#083358] poppins-semibold">Founder / Tutor</h2>
+                </div>
+            </div>
+            <div class="founder flex md:flex-row-reverse flex-col justify-center pt-24">
+              <div class="founder-img  md:w-[60%]  lg:w-[40%]">
+                  <img class="rounded-[20px] shadow-lg" src="{% static 'IMG-20240922-WA0024.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+              </div>
+              <div class="founder-info poppins-regular text-gray-700 text-[15px] md:text-[12px] lg:[text-15px] xl:text-[17px] md:px-5 lg:px-10 lg:[70%]  xl:w-[60%] md:w-[100%] max-md:pt-[15px]" data-aos="fade-up"  data-aos-once="true">
+
+                <p>Hello.. I'm Wisdom Emmanuel, nicknamed Desire.
+                  I hail from Akwa Ibom State, Nigeria. I'm a passionate graphic designer, tech enthusiast and voice over artist with over 2 years of experience in flyer designs and products promotion designs. I'm currently studying to obtain a Bachelor's degree in Computer engineering in the Prestigious university of Uyo, Akwa Ibom State.
+                  
+                  I'm thrilled each time I recall that I'm privileged to be one of the founding members of the Py50 community. I'm a graphic design tutor and instructor in the community.
+                  
+                  I believe there's a lot to grab in the tech space and the right knowledge is significant in achieving everything.
+                  </p>
+               
+                <h1 class="poppins-bold text-[#001F3F] text-[20px] pt-3">Wisdom Emmanuel</h1>
+                <h2 class="text-[#083358] poppins-semibold">Co-Founder / Tutor</h2>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Tutors Section -->
+    <section id="tutors" class="bg-white">
+      <div class="tutors container mx-auto">
+        <div class="relative w-full overflow-hidden ">
+          <div class="flex transition-transform duration-500 ease-in-out transform" id="carousel-slides">
+            <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-20">
+                  <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+                      <!-- Carousel Images -->
+                      <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                        <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                          <img src="{% static 'IMG-20241108-WA0036.jpg' %}" class="xl:w-[440px] max-md:hidden lg:w-[380px] md:w-[300px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                          <img src="{% static 'IMG-20241108-WA0036.jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                          <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
+                            <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[14px] md:text-[15px] lg:text-[18px]">Proficient software developer with expertise in Python, TensorFlow, Pandas, NumPy, PyTorch, and BERT, specializing in machine learning and data-driven solutions. Skilled in recommendation systems, NLP tools, text classification, and content ranking. Committed to impactful tech solutions.
+                            </p>
+                            <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Joseph Cosmos</h1>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Tutor</h2>
+                          </div>
+                        </div>
+                        
+                          <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                          <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                         
+                      </div>
+                    
+                    
+                    
+                  </div>
+                  
+                   
+                
+                 </div>
+                 <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+                  <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
+                      <!-- Carousel Images -->
+                      <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
+                        <div class="slide-1 flex md:flex-row  flex-col justify-center align-middle items-center md:justify-between">
+                          <img src="{% static 'IMG-20241108-WA0012.jpg' %}" class="xl:w-[480px] max-md:hidden lg:w-[280px] md:w-[330px] sm:w-[250px]   shadow-lg  ml-10 relative -top-10 md:-top-4 lg:-top-6 xl:-top-18 rounded-[20px]">
+                          <img src="{% static 'IMG-20241108-WA0012.jpg' %}" class="xl:w-[350px] md:hidden lg:w-[320px] md:w-[230px] sm:w-[410px] w-[300px]   shadow-lg  md:ml-10 relative -top-8 md:-top-4 lg:-top-6 xl:-top-8 rounded-[20px]">
+                          <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
+                            <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[12px] md:text-[13px] lg:text-[15px]">Proficient software developer with expertise in Python, JavaScript, and TypeScript, specializing in Ionic and Capacitor for cross-platform app development. Experienced in creating 2D animations with Moho Pro, combining technical skill with creative design. Committed to delivering high-quality, innovative solutions across both development and animation projects</p>
+                            <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Emmanuel Akpan</h1>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Tutor</h2>
+                          </div>
+                        </div>
+                        
+                          <!-- <img src="{% static 'IMG-20240517-WA0012.jpg' %}" class="w-1/2 object-cover" alt="Slide 2">
+                          <img src="{% static 'IMG-20240930-WA0004.jpg' %}" class="w-1/2 object-cover" alt="Slide 3"> -->
+                         
+                      </div>
+                    
+                    
+                    
+                  </div>
+                  
+                   
+                
+                 </div>
+                 
+                
+                         
+                      </div>
+                    
+                <!-- Navigation Buttons -->
+          <button class="absolute top-1/2 left-2 transform -translate-y-1/2 font-bold bg-[#0D63A5] ml-10 bg-opacity-100 text-white p-2 rounded-full  " id="prev">
+            ❮
+        </button>
+        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#0D63A5] bg-opacity-100 text-white p-2 font-bold mr-10 rounded-full " id="next">
+            ❯
+        </button>
+                    
+                  </div>
+              
+      </div>
+    </section>
+      
+
+    <section id="top-scholars" class="bg-white">
+      <div class="top-scholars container mx-auto px-5 md:px-5 xl:px-10">
+        <div class="top-scholar-title">
+          <h1 class="md:text-5xl text-3xl text-[#083358] poppins-bold" data-aos="fade-up"  data-aos-once="true">Our Top Scholars</h1>
+          <h2 class=" pt-3 poppins-regular text-gray-900 w-[400px] md:w-[500px]" data-aos="fade-up"  data-aos-once="true">Meet the top scholars in our community! They've shown remarkable consistency and determination since they joined us. You can be one of them too. <a href="{% url 'Onboarding:join' %}" class="text-blue-500">Join us today!</a></h2>
+        </div>
+        <div class="scholar-items grid lg:grid-cols-3 grid-rows-3 grid-cols-1 md:grid-cols-2  lg:grid-rows-2 gap-4 pt-5 poppins-bold text-center">
+          <div class="scholar-item max-sm:pt-5  md:w-[300px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240410-WA0000~2.jpg' %}" alt="">
+            <h1>Favour Jeremiah</h1>
+          </div>
+          <div class="scholar-item max-sm:pt-5  md:w-[290px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240920-WA0047(3).jpg' %}" alt="">
+            <h1>Idaraobong Etim</h1>
+          </div>
+          <div class="scholar-item  max-sm:pt-5  md:w-[320px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px]  pb-2" src="{% static 'covennat-removebg-preview.png' %}" alt="">
+            <h1>Covenant Monday</h1>
+          </div>
+          <div class="scholar-item max-sm:pt-5  md:w-[240px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20241109-WA0019.jpg' %}" alt="">
+            <h1>Dominion Clinton</h1>
+          </div>
+          <div class="scholar-item max-sm:pt-5  text-x   md:w-[300px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240927-WA0013(2).jpg' %}" alt="">
+            <h1>Dominion Isoh</h1>
+          </div>
+          <div class="scholar-item  max-sm:pt-5  md:w-[250px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240921-WA0009(2).jpg' %}" alt="">
+            <h1>David Etuk</h1>
+          </div>
+   
+        </div>
+      </div>
+    </section>
+    
+<section id="gallery" class="bg-white py-24">
+  <div class="gallery container  mx-auto">
+    <div class="main-gallery  flex md:flex-row flex-col bg-white justify-between  px-5 md:px-5 xl:px-10">
+      <div class="gallery-text">
+        <h1 class="md:text-5xl text-3xl text-[#083358] poppins-semibold" data-aos="fade-up"  data-aos-once="true">Our People</h1>
+        <p class=" pt-5 poppins-regular text-gray-900 w-[100%] lg:w-[500px] md:w-[400px] md:text-[12px] lg:text-[15px]" data-aos="fade-up"  data-aos-once="true">In our community, we focus not only on developing strong technical skills but also on fostering meaningful and supportive relationships among members. We recognize that building a solid foundation of trust, respect, and friendship is essential to successful collaboration, especially on complex projects that require diverse perspectives and teamwork.
+          <br> 
+          Our commitment goes beyond skill development; we prioritize a friendly, inclusive atmosphere where members feel valued and connected. This approach enables us to work together more effectively, learn from each other, and achieve greater outcomes collectively, as every collaboration is strengthened by the bonds we create within the community.</p>
+      </div>
+      <div class="gallery-head-image max-md:mt-5">
+        <img src="{% static 'IMG_20240329_130940~2.jpg' %}" alt="" class="rounded-[20px] md:w-[400px] lg:w-[590px]" data-aos="fade-up"  data-aos-once="true">
+      </div>
+    </div>
+    <div class="grid pt-3 md:pt-5  lg:grid-rows-1 md:grid-rows-2 grid-rows-3 lg:pt-10 grid-flow-col md:gap-4 lg:gap-4 gap-2 px-5 max-md:hidden">
+      
+        <img src="{% static 'IMG_20240330_114036~2.jpg' %}" alt="" class="lg:w-[200px] md:w-[250px] w-[800px] rounded-[20px] lg:mt-20 max-lg:row-span-2" data-aos="fade-up"  data-aos-once="true">
+     
+        <img src="{% static 'IMG-20240329-WA0009.jpeg' %}" alt="" class="lg:w-[800px] md:w-[1000px] rounded-[20px] md:h-52 lg:h-96 max-lg:col-span-2" data-aos="fade-up"  data-aos-once="true">
+  
+        <img src="{% static 'IMG_20240329_123011.jpg' %}" alt="" class="lg:w-[300px] md:[400px] rounded-[20px] max-lg:row-span-2 max-lg:col-span-2  " data-aos="fade-up"  data-aos-once="true">
+  
+    </div>
+  </div>
+</section>
+    
+
+
+      </main>
+      
+      
+      
+<footer class="bg-[#0A2647] text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="{% static 'White with name.PNG' %}" alt="">
+      </a>
+      <p class="mt-2 text-sm text-[#FFD717] font-bold">LEARN. BUILD. IMPACT.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+          </li>
+                  </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">FOR SPONSORS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://wa.link/ivzan9" class="text-gray-400 hover:text-yellow-500">Become a Sponsor</a>
+          </li>
+        
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">LINKS</h2>
+        <nav class="list-none mb-10">
+        <li>
+                  <a href="{% url 'Onboarding:Home' %}" class="text-gray-400 hover:text-yellow-500">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'Onboarding:about' %}" class="text-gray-400 hover:text-yellow-500">About Us</a>
+                </li>  
+                <li>
+                  <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Join Community</a>
+                </li>
+
+          
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">SUPPORT</h2>
+        <nav class="list-none mb-10">
+          
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]" >Help Center</a>
+          </li>
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]">support@py50c.xyz</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Py50 Community Limited. All rights reserved. —
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The Py50 Community</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+       
+        <a href="https://www.instagram.com/py50_community?igsh=YzljYTk1ODg3Zg==" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        
+      </span>
+    </div>
+  </div>
+</footer>
+       
+            <script>
+              const navLinks = document.querySelector('.nav-links')
+              function onToggleMenu(e){
+                  e.name = e.name === 'menu' ? 'close' : 'menu'
+                  navLinks.classList.toggle('top-[9%]')
+              }
+          </script>
+      
+      
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        </script>
+      <script src="{% static 'onboarding.js' %}?v=5"></script>
+</body>
+</html>
