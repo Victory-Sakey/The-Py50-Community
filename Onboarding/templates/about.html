@@ -187,7 +187,7 @@ header a ,
     <!-- <hr> -->
     <main class="bg-[#0D63A5]">
       <section id="hero">
-        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle w-[92%] px-10 pt-10  mx-auto" data-aos="fade-up"  data-aos-once="true">
+        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle w-[100%] px-5 pt-5 md:w-[92%] md:px-10 md:pt-10 mx-auto" data-aos="fade-up"  data-aos-once="true">
         <div class="hero-text w-full md:text-left text-center">
           <!-- <h1 class="bg-indigo-600  rounded mt-[50px] md:mt-[100px] w-[200px] text-white text-center hidden md:block" >Become a Tech Guru!</h1> -->
           <h2 class=" font-sans font-bold text-4xl mt-[20px] md:mt-[0px] md:text-4xl lg:text-6xl text-white  w-full  md:w-[100%] lg:w-[100%] pt-4 pb-4  " >We’re building the Future of  <span class="text-[#FFD717]">Technology</span></h2>
@@ -232,7 +232,7 @@ header a ,
                     </div>
                 </div>
             </div>
-            <img class="md:w-[3000px] shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142330.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+            <img class="md:w-[3000px] w-[3000px] shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142330.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
         </div>
     </section>
 
@@ -240,7 +240,7 @@ header a ,
 
     <section id="organizers" class="bg-white py-24">
         <div class="organizers container mx-auto px-8 md:px-5 lg:px-10">
-          <h1 class="text-center md:text-5xl text-4xl poppins-bold text-[#001F3F] pb-16" data-aos="fade-up"  data-aos-once="true">Meet Our Founders</h1>
+          <h1 class="text-center md:text-5xl text-3xl poppins-bold text-[#001F3F] pb-16" data-aos="fade-up"  data-aos-once="true">Meet Our Founders</h1>
             <div class="founder flex md:flex-row flex-col justify-center">
                 <div class="founder-img  md:w-[60%]  lg:w-[40%]">
                     <img class="rounded-[20px] shadow-lg" src="{% static 'IMG_0191.JPG.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
@@ -280,7 +280,7 @@ header a ,
       <div class="tutors container mx-auto">
         <div class="relative w-full overflow-hidden ">
           <div class="flex transition-transform duration-500 ease-in-out transform" id="carousel-slides">
-            <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-20">
+            <div class="flex-shrink-0 w-full px-10 md:px-16 xl:px-20 py-20">
                   <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
                       <!-- Carousel Images -->
                       <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
@@ -307,7 +307,7 @@ header a ,
                    
                 
                  </div>
-                 <div class="flex-shrink-0 w-full px-20 md:px-16 xl:px-20 py-32">
+                 <div class="flex-shrink-0 w-full px-10 md:px-16 xl:px-20 py-32">
                   <div class="relative rounded-lg shadow-lg bg-[#083358] md:h-[310px] lg:h-[360px] xl:h-[450px]">
                       <!-- Carousel Images -->
                       <div id="carousel" class="flex  transition-transform duration-700 ease-in-out">
@@ -339,10 +339,10 @@ header a ,
                       </div>
                     
                 <!-- Navigation Buttons -->
-          <button class="absolute top-1/2 left-2 transform -translate-y-1/2 font-bold bg-[#0D63A5] ml-10 bg-opacity-100 text-white p-2 rounded-full  " id="prev">
+          <button class="absolute top-1/2 left-2 transform -translate-y-1/2 font-bold bg-[#0D63A5] md:ml-10 bg-opacity-100 text-white p-2 rounded-full  " id="prev">
             ❮
         </button>
-        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#0D63A5] bg-opacity-100 text-white p-2 font-bold mr-10 rounded-full " id="next">
+        <button class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-[#0D63A5] bg-opacity-100 text-white p-2 font-bold md:mr-10 rounded-full " id="next">
             ❯
         </button>
                     
@@ -356,7 +356,7 @@ header a ,
       <div class="top-scholars container mx-auto px-5 md:px-5 xl:px-10">
         <div class="top-scholar-title">
           <h1 class="md:text-5xl text-3xl text-[#083358] poppins-bold" data-aos="fade-up"  data-aos-once="true">Our Top Scholars</h1>
-          <h2 class=" pt-3 poppins-regular text-gray-900 w-[400px] md:w-[500px]" data-aos="fade-up"  data-aos-once="true">Meet the top scholars in our community! They've shown remarkable consistency and determination since they joined us. You can be one of them too. <a href="{% url 'Onboarding:join' %}" class="text-blue-500">Join us today!</a></h2>
+          <h2 class=" pt-3 poppins-regular text-gray-900 w-[350px]  md:w-[500px]" data-aos="fade-up"  data-aos-once="true">Meet the top scholars in our community! They've shown remarkable consistency and determination since they joined us. You can be one of them too. <a href="{% url 'Onboarding:join' %}" class="text-blue-500">Join us today!</a></h2>
         </div>
         <div class="scholar-items grid lg:grid-cols-3 grid-rows-3 grid-cols-1 md:grid-cols-2  lg:grid-rows-2 gap-4 pt-5 poppins-bold text-center">
           <div class="scholar-item max-sm:pt-5  md:w-[300px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
