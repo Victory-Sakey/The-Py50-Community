@@ -188,8 +188,8 @@ header a ,
     <!-- <hr> -->
     <main>
       <section id="hero">
-        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle mt-[20px] w-[92%]  mx-auto" data-aos="fade-up"  data-aos-once="true">
-        <div class="hero-text md:ml-[50px] w-full md:text-left text-center">
+        <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle mt-[20px] w-[92%]  mx-auto" data-aos="fade-up"  data-aos-once="true" >
+        <div class="hero-text md:ml-[50px] w-full md:text-left text-center" >
           <!-- <h1 class="bg-indigo-600  rounded mt-[50px] md:mt-[100px] w-[200px] text-white text-center hidden md:block" >Become a Tech Guru!</h1> -->
           <h2 class=" font-sans font-bold text-4xl mt-[20px] md:mt-[0px] md:text-4xl lg:text-7xl text-white capitalize w-full md:w-[100%] lg:w-[100%] pt-4 pb-4  " >We are the  <span class="text-[#FFD717]">Py50 </span> Community.</h2>
           <p class="text-[#CCCCCC] md:text-[15px] lg:text-[19px] mt-3 md:w-[90%] lg:w-[90%] " >We dream of a world where everyone is empowered to achieve greatness, using their brilliant ideas and creativity to make a positive impact on society. With the aid of technology, we believe that every individual has the potential to change the world for the better.</p>
@@ -229,7 +229,7 @@ header a ,
 <br>
                 We are committed to fostering growth within our community, driven by a philosophy of mutual impact—where members both learn from and contribute to the community. As a member of Py50, you'll have the unique opportunity to be mentored by experts in any of the 50 technologies that interest you. Additionally, you'll have the chance to mentor others, sharing your expertise and helping to shape the next generation of tech innovators.
               </p>
-              <a href=""><button class="bg-blue-500 p-4 mt-8 w-[200px] text-white text-2xs font-sans  font-bold rounded-[50px] cursor-pointer hover:bg-[#00509E]">Know More</button></a>
+              <a href="{% url 'Onboarding:about' %}"><button class="bg-blue-500 p-4 mt-8 w-[200px] text-white text-2xs font-sans  font-bold rounded-[50px] cursor-pointer hover:bg-[#00509E]">Know More</button></a>
           </div>
           </div>
             
@@ -245,7 +245,7 @@ header a ,
             <p class="unleash-paragraph text-gray-300 pt-3 w-[100%] md:w-[80%] text-[15px]">
               The Py50 Community is for everyone, whether you're just starting in tech or already experienced. Py50 helps you grow as a techie by teaching, learning, and building projects together. We strongly believe that everyone has the potential to achieve great things, and as a community, we help you recognize and realize that potential.
             </p>
-              <a href="{% url 'Onboarding:about' %}"><button class="unleash-btn bg-white p-3 mt-5 hover:bg-[#083358] hover:text-white transition   rounded-[50px] cursor-pointer text-[15px]">Become a Member &rightarrow;</button></a>
+              <a href="{% url 'Onboarding:join' %}"><button class="unleash-btn bg-white p-3 mt-5 hover:bg-[#083358] hover:text-white transition   rounded-[50px] cursor-pointer text-[15px]">Become a Member &rightarrow;</button></a>
 
           </div>
           <div class="unleash-img">
@@ -359,8 +359,8 @@ header a ,
     </div>
     
 </div>
-<div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#fdbb06]">
-  <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]" data-aos="fade-up"  data-aos-once="true">
+<div  class="card-item m-2 mt-[15px]  rounded-[20px] w-[100%] md:w-[45%] align-middle bg-[#fdbb06]" data-aos="fade-up"  data-aos-once="true">
+  <div class="pin flex justify-end relative align-top top-[-25px] right-[-20px]" >
     <img src="{% static '32e609f0-pin.webp' %}" alt="">
   </div>
   <div class=" relative right-[-10px] top-[-20px] text-left text-white p-[10px] " >
@@ -387,7 +387,7 @@ header a ,
     <section id="faqs" class="lg:px-[80px] xl:px-[90px] px-[30px] mt-[50px] md:mt-[80px] xl:mt-[90px] pb-[50px]">
       <div class="faqs container flex md:flex-row justify-center  flex-col">
             <div class="faq-intro md:w-[50%] sm:w-[70%]" data-aos="fade-up"  data-aos-once="true">
-              <h1 class="xl:text-5xl sm:text-4xl text-4xl  poppins-bold  text-[#001F3F]">Frequently asked Questions</h1>
+              <h1 class="xl:text-5xl sm:text-4xl text-3xl  poppins-bold  text-[#001F3F]">Frequently asked Questions</h1>
               <p class="text-gray-600 poppins-regular py-3 md:[530px] xl:w-[450px] text-[20px]">Still have questions that aren't covered? Contact us today and get the answers you need.</p>
               <a href="https://wa.link/zqivo8">
                 <button class="bg-[#0D63A5] text-[15px] rounded-[50px] text-white p-3 mt-3 poppins-medium ">Contact Us &rightarrow;</button>
@@ -740,13 +740,13 @@ header a ,
         <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
+            <a href="{% url 'Onboarding:tutor' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
           </li>
           <li>
-            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
+            <a href="{% url 'Onboarding:mentor' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
           </li>
           <li>
-            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+            <a href="{% url 'Onboarding:scholar' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
           </li>
                   </nav>
       </div>
@@ -832,6 +832,6 @@ header a ,
 
 
 
-<script src="{% static 'onboarding.js' %}?v=5"></script>      
+<script src="{% static 'onboarding.js' %}?v=6"></script>      
 </body>
 </html>

@@ -50,7 +50,7 @@ function moveToPrevSlide() {
 }
 
 
-let autoplay = setInterval(moveToNextSlide, 3000);
+let autoplay = setInterval(moveToNextSlide, 15000);
 
 document.querySelector(".relative").addEventListener("mouseover", () => {
     clearInterval(autoplay);

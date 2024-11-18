@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{{ first_name }} just registered as a Scholar in the Py50 Community</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2>Scholar Details</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td>{{ first_name }}</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{ last_name }}</td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>{{ email_address }}</td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>{{ phone_number }}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>{{ gender }}</td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>{{ country }}</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>{{ city }}</td>
+            </tr>
+            <tr>
+                <td>About</td>
+                <td>{{ about }}</td>
+            </tr>
+            <tr>
+                <td>Expectations</td>
+                <td>{{ expectations }}</td>
+            </tr>
+            <tr>
+                <td>How</td>
+                <td>{{ how }}</td>
+            </tr>
+            <tr>
+                <td>Payment Plan</td>
+                <td>{{ payment_plan }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

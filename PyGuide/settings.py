@@ -16,6 +16,16 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Use your email service provider's SMTP server
+EMAIL_PORT = 587  # Typically 587 for TLS
+EMAIL_USE_TLS = True  # Use TLS (secure)
+EMAIL_USE_SSL = False  # Ensure this is False if TLS is True
+EMAIL_HOST_USER = 'py50cx@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'cigu yqef epdo ezqz'  # Your email account's password
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -78,8 +88,12 @@ WSGI_APPLICATION = 'PyGuide.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'py50',
+        'USER': 'py50_user',       # Username used to access the database
+        'PASSWORD': 'TxMKMTiEMlKUMDTIripdCSmvA3iBUIab',  # User's password
+        'HOST': 'dpg-cssvmcggph6c7399jn4g-a.oregon-postgres.render.com',       # Database server address (e.g., 'localhost' or 'dpg-crrot7l6l47c73cm6fjg-a.oregon-postgres.render.com')
+        'PORT': '5432',               # Port number (5432 is default for PostgreSQL)
     }
 }
 

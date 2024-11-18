@@ -10,6 +10,142 @@
 <link rel="manifest" href="{% static '/site.webmanifest' %}">
     <title>Join Community - The Py50 Community</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light,
+.hero p,
+.advantages .advantages-body .text p,
+.card-body p
+  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.poppins-regular , 
+.about-2 p,
+.unleash-btn
+ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium,
+header a ,
+.contact-btn button ,
+.about-2 button,
+.unleash-paragraph,
+.advantages .advantages-body .text h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold , .about h1 ,
+.how .card-body h1  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic , 
+.unleash h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+</style>
 </head>
 <body>
     <!--
@@ -20,17 +156,242 @@
   <body class="h-full">
   ```
 -->
-<main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-    <div class="text-center flex flex-col justify-center align-middle items-center">
-        <img class="w-[200px]" src="{% static 'Blue with name.PNG' %}" alt="">
-      <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Come back later</h1>
-      <p class="mt-6 text-pretty text-lg font-medium text-gray-500 lg:w-[500px]  sm:text-xl/8">Sorry, registration to join the community will commence on 14th, November, 2024. Join our whatsapp waitlist group to stay updated.</p>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="{% url 'Onboarding:Home' %}" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Go back home</a>
-        <a href="https://chat.whatsapp.com/CIFW1iX5sDYCfrjGrqTAMj" class="font-bold text-gray-900  text-[15px]">Join waitlist <span aria-hidden="true">&rarr;</span></a>
+<header class="bg-[#0D63A5] conatiner mx-auto">
+  <nav class="flex font-sans justify-between items-center w-[92%]  ">
+      <div>
+             <img class=" w-[150px] md:w-[120px] lg:w-[150px] ml-5" src="{% static 'White with name.PNG' %}" alt="">
+   
+      </div>
+      <div
+          class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] mt-10 md:w-auto  w-full flex items-center px-5 sm:px-3  md:px-5 text-white font-extrabold bg-[#025594] max-md:shadow-lg md:bg-transparent ">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+              <li>
+                  <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:Home' %}">Home</a>
+                
+              </li>
+              
+              <li>
+                  <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:about' %}">About Us</a>
+                  
+              </li>
+          
+              <li>
+                  <a class="text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:join' %}">Join Community</a>
+                 
+              </li>
+           
+             
+            
+          </ul>
+      </div>
+      <div class="contact-btn flex items-center gap-6">
+          <a href="https://wa.link/zqivo8">
+            <button  style="box-shadow: -1px 5px white; border-bottom: 2px solid #eed602;" class="bg-[#FFEB3B] text-[#00509E] px-2 py-2 lg:px-10 lg:py-3 rounded-[50px] text-[13px] md:text-[15px] font-bold mt-3 hover:bg-[#eed602]">Contact Us</button>
+          </a>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-[white] md:hidden"></ion-icon>
+      </div>
+</header>
+
+
+<main class="bg-[#0D63A5]">
+  <section id="hero">
+    <div class="hero container flex flex-col md:flex-row items-center justify-center align-middle w-[100%] px-5 pt-5 md:w-[92%] md:px-10 md:pt-10 mx-auto">
+    <div class="hero-text w-full md:text-left text-center">
+      <!-- <h1 class="bg-indigo-600  rounded mt-[50px] md:mt-[100px] w-[200px] text-white text-center hidden md:block" >Become a Tech Guru!</h1> -->
+      <h2 class=" font-sans font-bold text-4xl mt-[20px] md:mt-[0px] md:text-4xl lg:text-6xl text-white  w-full  md:w-[100%] lg:w-[78%] pt-4 pb-4  " >Be a part of Our   <span class="text-[#FFD717]">Big Dream!</span></h2>
+      <p class="text-[#CCCCCC] md:text-[15px] lg:text-[19px] mt-3 md:w-[90%] lg:w-[90%] " >Each member contributes a significant and indispensable role to the very foundation, growth, and ongoing existence of the community, ensuring its success, vibrancy, and ability to thrive collectively. </p>
+      <div class="btn flex md:justify-start justify-center">
+        <!-- <button class="started bg-indigo-700 text-white px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-white hover:text-indigo-700 mt-5 mr-4 ">Get Started</button>
+        <button class="join bg-white text-indigo-700 px-5 md:px-4 lg:px-5 py-3 md:py-2 lg:py-3 rounded-[20px] md:rounded-[15px] lg:rounded-[20px] w-40 md:w-30 lg:w-40 text-[15px] md:text-[12px] lg:text-[15px] font-bold hover:bg-indigo-700 hover:text-white mt-5 ">Join Community</button> -->
       </div>
     </div>
-  </main>
+    <div class="hero-img md:w-[1000px] lg:w-[80%] mt-4">
+      <img class="rounded-[20px]" src="{% static '21083.webp' %}" alt="">
+    </div>
+    </div>
+    
+    <img  src="{% static 'white-cloud.svg' %}" class="w-full mt-[50px]" alt="">
+    
+</section>
+
+<section class="grid min-h-full place-items-center bg-white px-6 pb-24 lg:px-8">
+  <!-- <div class="text-center flex flex-col justify-center align-middle items-center">
+      <img class="w-[200px]" src="{% static 'Blue with name.PNG' %}" alt="">
+    <h1 class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Come back later</h1>
+    <p class="mt-6 text-pretty text-lg font-medium text-gray-500 lg:w-[500px]  sm:text-xl/8">Sorry, registration to join the community will commence on 14th, November, 2024. Join our whatsapp waitlist group to stay updated.</p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <a href="{% url 'Onboarding:Home' %}" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Go back home</a>
+      <a href="https://chat.whatsapp.com/CIFW1iX5sDYCfrjGrqTAMj" class="font-bold text-gray-900  text-[15px]">Join waitlist <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div> -->
+
+  <div class="overflow-hidden bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 poppins-bold sm:text-5xl" data-aos="fade-up"  data-aos-once="true">Join us with the role that best suits you</p>
+
+            <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+              <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                <dt class="inline font-semibold text-blue-500">
+
+                  Scholar.
+                </dt>
+                <dd class="inline">As a Scholar in the community, you will have the opportunity to learn a technology of your choice from our selection of 50 core technologies. You’ll receive instruction from our Tutors and be paired with a Mentor to provide additional guidance throughout your learning journey.
+                  
+                <div>
+                  <a href="{% url 'Onboarding:scholar' %}">
+                    <button class="unleash-btn bg-[#0D63A5] w-[150px] p-2 mt-2 hover:bg-[#083358] hover:text-white transition text-white poppins-regular   rounded-[50px] cursor-pointer text-[13px]">Join as a Scholar</button>
+                  </a>
+                </div>
+                </dd>
+              </div>
+             
+              <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                <dt class="inline font-semibold text-blue-500">
+                
+                  Mentor.
+                </dt>
+                <dd class="inline">As a Mentor in the community, you’ll be assigned a Scholar to mentor and guide individually, enabling you to expand your own knowledge while sharing it with others. This role allows you to make a meaningful impact on their journey while honing your expertise.
+                  <div class=""> 
+                    <a href="{% url 'Onboarding:mentor' %}">
+                      <button class="unleash-btn bg-[#0D63A5] p-2 mt-2 hover:bg-[#083358] hover:text-white transition text-white poppins-regular   rounded-[30px] w-[150px] cursor-pointer text-[13px]">Join as a Mentor</button>
+                    </a>
+                   </div>
+                </dd>
+              </div>
+              <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                <dt class="inline font-semibold text-blue-500">
+                  Tutor.
+                </dt>
+                <dd class="inline">As a Tutor in the community, you’ll be responsible for teaching any skills you’re proficient in among our 50 core technologies to Scholars eager to learn. You’ll serve as a leader, becoming a trusted figure that Scholars look up to. Additionally, you’ll collaborate with fellow Tutors to organize and lead impactful projects, fostering both personal and community growth.
+                  <div class=""> 
+                    <a href="{% url 'Onboarding:tutor' %}">
+                      <button class="unleash-btn bg-[#0D63A5] p-2 mt-2 hover:bg-[#083358] hover:text-white transition text-white poppins-regular   rounded-[30px] w-[150px] cursor-pointer text-[13px]">Join as a Tutor</button>
+                    </a>
+                   </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <img data-aos="fade-left"  data-aos-once="true" src="{% static 'two-young-african-men-office-with-laptop_219728-4404.jpg' %}" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+      </div>
+    </div>
+  </div>
   
+
+</section>
+
+</main>
+
+
+<footer class="bg-[#0A2647] text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="{% static 'White with name.PNG' %}" alt="">
+      </a>
+      <p class="mt-2 text-sm text-[#FFD717] font-bold">LEARN. BUILD. IMPACT.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="{% url 'Onboarding:tutor' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:mentor' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
+          </li>
+          <li>
+            <a href="{% url 'Onboarding:scholar' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+          </li>
+                  </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">FOR SPONSORS</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a href="https://wa.link/ivzan9" class="text-gray-400 hover:text-yellow-500">Become a Sponsor</a>
+          </li>
+        
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">LINKS</h2>
+        <nav class="list-none mb-10">
+        <li>
+                  <a href="{% url 'Onboarding:Home' %}" class="text-gray-400 hover:text-yellow-500">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'Onboarding:about' %}" class="text-gray-400 hover:text-yellow-500">About Us</a>
+                </li>  
+                <li>
+                  <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Join Community</a>
+                </li>
+
+          
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">SUPPORT</h2>
+        <nav class="list-none mb-10">
+          
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]" >Help Center</a>
+          </li>
+          <li>
+            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]">support@py50c.xyz</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Py50 Community Limited. All rights reserved. —
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The Py50 Community</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+       
+        <a href="https://www.instagram.com/py50_community?igsh=YzljYTk1ODg3Zg==" class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navLinks = document.querySelector('.nav-links')
+  function onToggleMenu(e){
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+      navLinks.classList.toggle('top-[9%]')
+  }
+</script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init({
+duration: 1000,
+once: true,
+});
+</script>
+
+
+
+<script src="{% static 'onboarding.js' %}?v=6"></script>      
 </body>
 </html>

@@ -159,12 +159,12 @@ header a ,
             class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] mt-10 md:w-auto  w-full flex items-center px-5 sm:px-3  md:px-5 text-white font-extrabold bg-[#025594] max-md:shadow-lg md:bg-transparent ">
             <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
-                    <a class="text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:Home' %}">Home</a>
+                    <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:Home' %}">Home</a>
                   
                 </li>
                 
                 <li>
-                    <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:about' %}">About Us</a>
+                    <a class="text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:about' %}">About Us</a>
                     
                 </li>
             
@@ -232,7 +232,8 @@ header a ,
                     </div>
                 </div>
             </div>
-            <img class="md:w-[3000px] w-[3000px] shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142330.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+            <img class="md:w-[3000px] max-md:hidden w-[3000px] shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142330.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+            <img class="md:w-[3000px] md:hidden shadow-2xl rounded-[10px]" src="{% static 'IMG_20240330_142342.jpg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
         </div>
     </section>
 
@@ -291,7 +292,7 @@ header a ,
                             <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[14px] md:text-[15px] lg:text-[18px]">Proficient software developer with expertise in Python, TensorFlow, Pandas, NumPy, PyTorch, and BERT, specializing in machine learning and data-driven solutions. Skilled in recommendation systems, NLP tools, text classification, and content ranking. Committed to impactful tech solutions.
                             </p>
                             <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Joseph Cosmos</h1>
-                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Tutor</h2>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Pioneer Tutor</h2>
                           </div>
                         </div>
                         
@@ -317,7 +318,7 @@ header a ,
                           <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
                             <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[12px] md:text-[13px] lg:text-[15px]">Proficient software developer with expertise in Python, JavaScript, and TypeScript, specializing in Ionic and Capacitor for cross-platform app development. Experienced in creating 2D animations with Moho Pro, combining technical skill with creative design. Committed to delivering high-quality, innovative solutions across both development and animation projects</p>
                             <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Emmanuel Akpan</h1>
-                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Tutor</h2>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Pioneer Tutor</h2>
                           </div>
                         </div>
                         
@@ -383,7 +384,18 @@ header a ,
             <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240921-WA0009(2).jpg' %}" alt="">
             <h1>David Etuk</h1>
           </div>
-   
+          <div class="scholar-item  max-sm:pt-5  md:w-[250px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20241113-WA0018.jpg' %}" alt="">
+            <h1>Abasiofon Sendan</h1>
+          </div>
+          <div class="scholar-item  max-sm:pt-5  md:w-[250px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20241113-WA0061.jpg' %}" alt="">
+            <h1>David Ajayi</h1>
+          </div>
+          <div class="scholar-item  max-sm:pt-5  md:w-[250px] text-xl md:text-2xl text-[#083358]" data-aos="fade-up"  data-aos-once="true">
+            <img class="rounded-[20px] pb-2" src="{% static 'IMG-20240517-WA0012.jpg' %}" alt="">
+            <h1>Brown Chibudom</h1>
+          </div>
         </div>
       </div>
     </section>
@@ -418,7 +430,7 @@ header a ,
       </main>
       
       
-      
+  
 <footer class="bg-[#0A2647] text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
@@ -432,13 +444,13 @@ header a ,
         <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
+            <a href="{% url 'Onboarding:tutor' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
           </li>
           <li>
-            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
+            <a href="{% url 'Onboarding:mentor' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
           </li>
           <li>
-            <a href="{% url 'Onboarding:join' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+            <a href="{% url 'Onboarding:scholar' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
           </li>
                   </nav>
       </div>
@@ -521,6 +533,6 @@ header a ,
             once: true,
           });
         </script>
-      <script src="{% static 'onboarding.js' %}?v=5"></script>
+      <script src="{% static 'onboarding.js' %}?v=6"></script>
 </body>
 </html>

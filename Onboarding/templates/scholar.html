@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/site.webmanifest' %}">
+    <link rel="stylesheet" href="{% static 'onboarding.css' %}?v=4">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Available Technologies - The Py50 Community</title>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light,
+.hero p,
+.advantages .advantages-body .text p,
+.card-body p
+  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+.poppins-regular , 
+.about-2 p,
+.unleash-btn
+ {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium,
+header a ,
+.contact-btn button ,
+.about-2 button,
+.unleash-paragraph,
+.advantages .advantages-body .text h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold , .about h1 ,
+.how .card-body h1  {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic , 
+.unleash h1
+{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+</style>
+</head>
+<body class="container mx-auto  pt-16 sm:py-16">
+    <header>
+        <a href="{% url 'Onboarding:join' %}" class="poppins-semibold hover:text-[#0D63A5] text-gray-900 text-[15px] max-sm:pl-5 text-left">&leftarrow; Go Back</a>
+    </header>
+    <main>
+        <section id="pick" class="pt-10">
+            <div class="pick container">
+                <div class="pick-header">
+                    <h1 class="text-3xl sm:text-4xl poppins-bold text-[#083358] text-center">Available Technologies</h1>
+                    <p class="text-center text-[15px] md:text-[16px] poppins-regular px-[30px] sm:px-[100px] pt-3">From the 50 technologies available within our community, please select a technology you would like to learn as a Scholar. Kindly note that all 50 technologies will not be accessible immediately; they will be released gradually over time. Currently, we are offering one foundational technology, essential to your tech journey regardless of the career path you choose to pursue. Explore it below!</p>
+                </div>
+                <div class="bg-white">
+                    <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:pt-16 lg:px-8">
+                      <div class="relative isolate overflow-hidden bg-[#083358] px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0" aria-hidden="true">
+                          <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+                          <defs>
+                            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                              <stop stop-color="#FFD717" />
+                              <stop offset="1" stop-color="#0D63A5" />
+                            </radialGradient>
+                          </defs>
+                        </svg>
+                        <div class="mx-auto lg:max-w-sm xl:max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                          <h2 class="text-balance text-3xl font-semibold tracking-tight text-white xl::text-4xl poppins-semibold">Python Programming</h2>
+                          <p class="mt-6 text-pretty text-[15px] xl:text-lg/8 text-gray-300 poppins-regular">Python is one of the most versatile and beginner-friendly programming languages, making it perfect for anyone looking to start or advance their tech career. Its simple syntax is easy to learn, yet it powers cutting-edge fields like web development, data science, machine learning, automation and so much more!</p>
+                          <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                            <a href="{% url 'Onboarding:scholar_registration' %}" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#083358] hover:text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white poppins-medium">Get started</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1DW6N6Q1GiOsSNS3zQMiGwt7K3adOHDJ5/view?usp=drivesdk" class="text-sm/6  text-white hover:text-[#FFD717] poppins-medium">Learn more <span aria-hidden="true">→</span></a>
+                          </div>
+                        </div>
+                        <div class="relative mt-16 h-100 sm:h-80 lg:mt-8">
+                          <img class="sm:absolute sm:-left-10 sm:top-10 sm:w-[45rem] sm:max-w-none  rounded-md bg-white/5 ring-1 ring-white/10" src="{% static '33556.webp' %}" alt="App screenshot" width="1824" height="1080">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </section>
+    </main>
+</body>
+</html>
