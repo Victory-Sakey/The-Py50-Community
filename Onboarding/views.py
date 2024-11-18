@@ -71,7 +71,7 @@ def admin_temporary_email(first_name , last_name , email_address , phone_number 
     message = render_to_string('temporary_admin_email.html', context)
     email = EmailMessage(subject, message, from_email, recipient_list)
     email.content_subtype = 'html'
-    email.send(fail_silently=False)
+    email.send(fail_silently=True)
 
 
 def payment(request):
