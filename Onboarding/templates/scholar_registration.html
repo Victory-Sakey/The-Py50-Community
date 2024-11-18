@@ -177,10 +177,11 @@ header a ,
   }
   ```
 -->
-<form method="post">
+<form method="post" action="{% url 'Onboarding:scholar_registration' %}>
+    {% csrf_token %}
     <div class="space-y-12 px-5>
 
-        {% csrf_token %}
+        
   
         
   
