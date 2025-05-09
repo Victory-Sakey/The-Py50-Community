@@ -172,6 +172,11 @@ header a ,
                     <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="{% url 'Onboarding:join' %}">Join Community</a>
                    
                 </li>
+
+                <li>
+                  <a class="hover:text-[#FFEB3B] max-sm:text-xl" href="https://tally.so/r/3Xg2xd">Apply for Cohort 3</a>
+                 
+              </li>
              
                
               
@@ -292,7 +297,7 @@ header a ,
                             <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[14px] md:text-[15px] lg:text-[18px]">Proficient software developer with expertise in Python, TensorFlow, Pandas, NumPy, PyTorch, and BERT, specializing in machine learning and data-driven solutions. Skilled in recommendation systems, NLP tools, text classification, and content ranking. Committed to impactful tech solutions.
                             </p>
                             <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Joseph Cosmos</h1>
-                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Pioneer Tutor</h2>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Co-Founder / Tutor</h2>
                           </div>
                         </div>
                         
@@ -318,7 +323,7 @@ header a ,
                           <div class="testimony max-md:px-8 max-sm:px-2  max-md:pb-8 max-sm:pb-2  md:p-4 lg:p-12 xl:p-28 ">
                             <p class="text-white font-bold poppins-bold break-words pb-3 md:pb-3 xl:pb-10 text-[12px] md:text-[13px] lg:text-[15px]">Proficient software developer with expertise in Python, JavaScript, and TypeScript, specializing in Ionic and Capacitor for cross-platform app development. Experienced in creating 2D animations with Moho Pro, combining technical skill with creative design. Committed to delivering high-quality, innovative solutions across both development and animation projects</p>
                             <h1 class="poppins-semibold md:text-[13px] lg:text-[15px] text-white">Emmanuel Akpan</h1>
-                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Pioneer Tutor</h2>
+                            <h2 class="poppins-medium text-[12px] text-[#FFD717]">Co-Founder / Tutor</h2>
                           </div>
                         </div>
                         
@@ -431,91 +436,95 @@ header a ,
       
       
   
-<footer class="bg-[#0A2647] text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="{% static 'White with name.PNG' %}" alt="">
-      </a>
-      <p class="mt-2 text-sm text-[#FFD717] font-bold">LEARN. BUILD. IMPACT.</p>
-    </div>
-    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a href="{% url 'Onboarding:tutor' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
-          </li>
-          <li>
-            <a href="{% url 'Onboarding:mentor' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
-          </li>
-          <li>
-            <a href="{% url 'Onboarding:scholar' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
-          </li>
-                  </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">FOR SPONSORS</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a href="https://wa.link/ivzan9" class="text-gray-400 hover:text-yellow-500">Become a Sponsor</a>
-          </li>
-        
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">LINKS</h2>
-        <nav class="list-none mb-10">
-        <li>
-                  <a href="{% url 'Onboarding:Home' %}" class="text-gray-400 hover:text-yellow-500">Home</a>
+      <footer class="bg-[#0A2647] text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div data-aos="zoom-in"  data-aos-once="true" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <img src="{% static 'White with name.PNG' %}" alt="">
+            </a>
+            <p class="mt-2 text-sm text-[#FFD717] font-bold">LEARN. BUILD. IMPACT.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">JOIN COMMUNITY</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="{% url 'Onboarding:tutor' %}" class="text-gray-400 hover:text-yellow-500">As a Tutor</a>
                 </li>
                 <li>
-                  <a href="{% url 'Onboarding:about' %}" class="text-gray-400 hover:text-yellow-500">About Us</a>
-                </li>  
-                <li>
-                  <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Join Community</a>
+                  <a href="{% url 'Onboarding:mentor' %}"  class="text-gray-400 hover:text-yellow-500">As a Mentor</a>
                 </li>
-
-          
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">SUPPORT</h2>
-        <nav class="list-none mb-10">
-          
-          <li>
-            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]" >Help Center</a>
-          </li>
-          <li>
-            <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]">support@py50c.xyz</a>
-          </li>
-        </nav>
-      </div>
-    </div>
-  </div>
-  <div class="bg-gray-100">
-    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Py50 Community Limited. All rights reserved. —
-        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The Py50 Community</a>
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" class="text-gray-500">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
-       
-        <a href="https://www.instagram.com/py50_community?igsh=YzljYTk1ODg3Zg==" class="ml-3 text-gray-500">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-        
-      </span>
-    </div>
-  </div>
-</footer>
+                <li>
+                  <a href="{% url 'Onboarding:scholar' %}"  class="text-gray-400 hover:text-yellow-500">As a Scholar</a>
+                </li>
+                        </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">FOR SPONSORS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a href="https://wa.link/ivzan9" class="text-gray-400 hover:text-yellow-500">Become a Sponsor</a>
+                </li>
+              
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">LINKS</h2>
+              <nav class="list-none mb-10">
+              <li>
+                        <a href="{% url 'Onboarding:Home' %}" class="text-gray-400 hover:text-yellow-500">Home</a>
+                      </li>
+                      <li>
+                        <a href="{% url 'Onboarding:about' %}" class="text-gray-400 hover:text-yellow-500">About Us</a>
+                      </li>  
+                      <li>
+                        <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Apply for Cohort 3</a>
+                      </li>
+                      <li>
+                        <a href="{% url 'Onboarding:join' %}" class="text-gray-400 hover:text-yellow-500">Join Community</a>
+                      </li>
+      
+                
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-200 tracking-widest text-sm mb-3">SUPPORT</h2>
+              <nav class="list-none mb-10">
+                
+                <li>
+                  <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]" >Help Center</a>
+                </li>
+                <li>
+                  <a href="https://wa.link/zqivo8" class="text-gray-400 hover:text-[#FFD717]">Chat with us on Whatsapp</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Py50 Community Limited. All rights reserved. —
+              <a href="https://x.com/py_50c" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@The Py50 Community</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a href="https://www.facebook.com/profile.php?id=61565232759787&mibextid=ZbWKwL" class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+      
+             
+              <a href="https://www.instagram.com/py50_community?igsh=YzljYTk1ODg3Zg==" class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              
+            </span>
+          </div>
+        </div>
+      </footer>
        
             <script>
               const navLinks = document.querySelector('.nav-links')

@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'PyGuide.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'py50',
-        'USER': 'py50_user',       # Username used to access the database
-        'PASSWORD': 'TxMKMTiEMlKUMDTIripdCSmvA3iBUIab',  # User's password
-        'HOST': 'dpg-cssvmcggph6c7399jn4g-a.oregon-postgres.render.com',       # Database server address (e.g., 'localhost' or 'dpg-crrot7l6l47c73cm6fjg-a.oregon-postgres.render.com')
+        'NAME': 'the_py50_community',
+        'USER': 'the_py50_community_user',       # Username used to access the database
+        'PASSWORD': '5oJwltJkFCFxITtIxS3xBxX2IWyBWvgX',  # User's password
+        'HOST': 'dpg-d0e7bjs9c44c73cm14dg-a.oregon-postgres.render.com',     
         'PORT': '5432',               # Port number (5432 is default for PostgreSQL)
     }
 }
